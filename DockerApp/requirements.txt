@@ -1,0 +1,7 @@
+langchain
+langchain-aws
+boto3
+streamlit
+PyMuPDF
+langchain-community
+pydantic
