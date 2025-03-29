@@ -182,6 +182,12 @@ ssh_keys
 terraform.rc
 darwin*
 darwin_arm64/*
+chatbot-env/
+**/db/
+**/faiss_index/
+**/osenv/
+*.pdf
+
 
 # Crash log files
 crash.log

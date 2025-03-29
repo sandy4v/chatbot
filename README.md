@@ -29,6 +29,19 @@ Postman Body
 
 
 ## Set virtual environment for a clean run
-python3 -m venv chatbot-env
-source chatbot-env/bin/activate  # On MacOS/Linux
+python3 -m venv chatbot-env1
+source chatbot-env1/bin/activate  # On MacOS/Linux
+
 chatbot-env\Scripts\activate     # On Windows
+
+## Run Streamline py
+streamlit run python3 main.py
+
+## Docker
+
+docker build -t docker-chatapp . 
+`docker run -e BUCKET_NAME=sandeep-patharkar-faiss-store-bckt -v ~/.aws:/root/.aws -p 8502:8502 -it docker-chatapp`
+
+## S3 bucket name
+sandeep-patharkar-gen-ai-bckt
+sandeep-patharkar-faiss-store-bckt
